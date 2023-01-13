@@ -1,0 +1,2 @@
+In many problems dealing with an array (or LinkedList), we are asked to find or calculate something among all the
+contiguous sub-arrays (or sub-lists) of a given size.

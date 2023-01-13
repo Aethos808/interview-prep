@@ -1,0 +1,22 @@
+{
+  "name": "blind75",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "nodemon --watch src -e ts --exec ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "jest": "29.3.1",
+    "@types/jest": "29.2.5",
+    "ts-jest": "29.0.4",
+    "nodemon": "2.0.20",
+    "ts-node": "10.9.1"
+  }
+}
