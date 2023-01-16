@@ -2,8 +2,12 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es5",
-    "sourceMap": true,
-    "esModuleInterop": true
+    "allowJs": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"],
+    }
   },
   "exclude": [
     "node_modules"
