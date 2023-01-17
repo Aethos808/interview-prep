@@ -1,4 +1,4 @@
-import {maximumSumSubarrayOfSizeK} from "./maximumSumSubarrayOfSizeK";
+import {largestSubarrayLengthK} from "./largestSubarrayLengthK";
 
 describe("maximumSumSubarrayOfSizeK", () => {
   describe('Given a positive array and k', () => {
@@ -11,8 +11,8 @@ describe("maximumSumSubarrayOfSizeK", () => {
       const sizeOneK = 1;
       const sizeOneExpectedGreatestSum = 2;
 
-      expect(maximumSumSubarrayOfSizeK(array, k)).toEqual(expectedGreatestSum);
-      expect(maximumSumSubarrayOfSizeK(sizeOneArray, sizeOneK)).toEqual(sizeOneExpectedGreatestSum);
+      expect(largestSubarrayLengthK(array, k)).toEqual(expectedGreatestSum);
+      expect(largestSubarrayLengthK(sizeOneArray, sizeOneK)).toEqual(sizeOneExpectedGreatestSum);
     })
   })
 })

@@ -1,4 +1,4 @@
-import {minimumSizeSubArray} from "./minimumSizeSubArraySum";
+import {minimumSizeSubarray} from "./minimumSizeSubarraySum";
 
 describe("minimumSizeSubArray", () => {
   describe('Given a positive array and s', () => {
@@ -11,8 +11,8 @@ describe("minimumSizeSubArray", () => {
       const sizeOneK = 1;
       const sizeOneExpectedSmallestSum = 2;
 
-      expect(minimumSizeSubArray(array, k)).toEqual(expectedSmallestSum);
-      expect(minimumSizeSubArray(sizeOneArray, sizeOneK)).toEqual(sizeOneExpectedSmallestSum);
+      expect(minimumSizeSubarray(array, k)).toEqual(expectedSmallestSum);
+      expect(minimumSizeSubarray(sizeOneArray, sizeOneK)).toEqual(sizeOneExpectedSmallestSum);
     })
   })
 })

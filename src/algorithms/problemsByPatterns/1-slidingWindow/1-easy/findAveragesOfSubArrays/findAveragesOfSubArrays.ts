@@ -3,6 +3,26 @@
  * https://leetcode.com/problems/maximum-average-subarray-i/
  */
 
+export const findAveragesOfSubArrays = (nums: number[], k: number):number => {
+  let maxAverage:number = 0;
+
+  return maxAverage;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Brute force *came up with this first*
 // export const findAveragesOfSubArrays = (nums: number[], k: number):number => {
 //   let maxAverage:number = Number.NEGATIVE_INFINITY;
@@ -23,12 +43,3 @@
 //
 //   return maxAverage;
 // }
-
-export const findAveragesOfSubArrays = (nums: number[], k: number):number => {
-  let maxAverage:number = Number.NEGATIVE_INFINITY;
-  //current value
-  //start window
-  //loop
-
-  return maxAverage;
-}

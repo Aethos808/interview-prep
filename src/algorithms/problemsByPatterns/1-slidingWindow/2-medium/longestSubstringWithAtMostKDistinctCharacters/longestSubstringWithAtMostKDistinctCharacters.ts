@@ -1,3 +1,9 @@
+/**
+ * TODO: Given a string s and an integer k, return the length of the longest substring of s that contains at most k distinct characters.
+ * link - https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+ * @param s - some string
+ * @param k - max number of distinct characters in a subarray
+ */
 export const longestSubstringWithAtMostKDistinctCharacters = (s:string, k:number): number => {
   let longestSubstring = '';
 

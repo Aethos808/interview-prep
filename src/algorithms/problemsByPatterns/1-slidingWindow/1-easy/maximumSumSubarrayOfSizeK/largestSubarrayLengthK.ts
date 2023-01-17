@@ -1,8 +1,9 @@
 /**
  * TODO: given an array of positive numbers and a positive number 'k', find the maximum sum of any contiguous subarray os size 'k'
+ * link: https://leetcode.com/problems/largest-subarray-length-k/
  */
 
-export const maximumSumSubarrayOfSizeK = (nums: number[], k: number): number => {
+export const largestSubarrayLengthK = (nums: number[], k: number): number => {
   let maxSum = 0;
   let startWindow = 0;
   let windowSum = 0;
