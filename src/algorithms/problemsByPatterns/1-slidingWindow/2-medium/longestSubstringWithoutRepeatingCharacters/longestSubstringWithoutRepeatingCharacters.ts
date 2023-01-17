@@ -6,7 +6,7 @@
 export const longestSubstringWithoutRepeatingCharacters = (s: string):number => {
   const maxDistinctCharacters = 1;
   let longestStringLength = 0;
-  let currentSubString = ''
+  let currentSubString = '';
   let valuesInWindow = {};
   let startWindow = 0;
 
