@@ -1,6 +1,10 @@
 - hosting in aws
-    - buying domain
     - set up networking
+        - buying domain
+        - dns
+        - vpc
+        - subnets
+        - security groups
     - set up in ECS and ECR
     - create terraform as a backup
 - set up CICD (in GHA, or Jenkins)
@@ -18,3 +22,4 @@
 
 - **nice to haves**
     - use helm with kubernetes configuration
+    - rewrite service to use AWS Lambda
