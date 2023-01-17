@@ -1,0 +1,20 @@
+- hosting in aws
+    - buying domain
+    - set up networking
+    - set up in ECS and ECR
+    - create terraform as a backup
+- set up CICD (in GHA, or Jenkins)
+    - create merge/deployment plan
+    - create rollback plan
+    - test deployments
+    - set up terraform backup
+- host relevant data in some db (should probably do one SQL db and one NOSQL db)
+    - maybe AWS Aurora?
+    - add CICD job to remove stuff from db safely
+- maybe later move to hosting in kubernetes?
+    - local testing of kubernetes environment
+    - set up EKS
+    - update CICD to reflect the new deployment location and structure
+
+- **nice to haves**
+    - use helm with kubernetes configuration
