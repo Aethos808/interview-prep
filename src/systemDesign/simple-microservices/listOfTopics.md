@@ -9,19 +9,21 @@
         - ☑ dns
             - ☑ in your hosted zone (should be created automatically when domain is registered)
             create records to route different types of traffic           
-        - enable HTTPS
+        - ☑ enable HTTPS
             - ☑ create SSL cert in AWS ACM
-            - Open https port (443) in your EC2 instances
-                - ☑ add a record to your Hosted Zone in Route 53 (it can do this for you automatically when you create the cert)
-                    - ☑ you will need to configure the record to allow traffic from the hosted zone to the service IP
-                - ☑ add a listener in the EC2 load balancer linked to the cert
-
+            - ☑ Open https port (443) in your EC2 instances
+              - ☑ add a record to your Hosted Zone in Route 53 (it can do this for you automatically when you create the cert)
+                - ☑ you will need to configure the record to allow traffic from the hosted zone to the service IP
+                  - ☑ add a listener in the EC2 load balancer linked to the cert
             - add SSL cert to client requests
         - vpc
         - subnets
-        - security groups
-    - set up in ECS and ECR
+        - ☑ security groups
     - create terraform as a backup
+  - Deploy app into ECS
+    - created repo in ecr called cost-service
+    - make sure you have aws-cli installed on your machine (check resources for download link and instructions)
+  - show app on our website
 - set up CICD (in GHA, or Jenkins)
     - create merge/deployment plan
     - create rollback plan
@@ -44,6 +46,8 @@
     - add interaction with amazon s3, and KMS
 
 RESOURCES:
+- AWS Cli
+  - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 - Domain Name
     - thisismytestaws.click
 - Networking
