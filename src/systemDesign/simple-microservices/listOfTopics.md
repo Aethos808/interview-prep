@@ -15,14 +15,16 @@
               - ☑ add a record to your Hosted Zone in Route 53 (it can do this for you automatically when you create the cert)
                 - ☑ you will need to configure the record to allow traffic from the hosted zone to the service IP
                   - ☑ add a listener in the EC2 load balancer linked to the cert
-            - add SSL cert to client requests
         - vpc
         - subnets
         - ☑ security groups
     - create terraform as a backup
   - Deploy app into ECS
-    - created repo in ecr called cost-service
+    - create repos in ecr
+        - ☑ cost-service repo
+        - tax service repo
     - make sure you have aws-cli installed on your machine (check resources for download link and instructions)
+    - add SSL cert to client requests
   - show app on our website
 - set up CICD (in GHA, or Jenkins)
     - create merge/deployment plan
