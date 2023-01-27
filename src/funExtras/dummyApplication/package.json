@@ -1,0 +1,17 @@
+{
+  "name": "dummyapplication",
+  "version": "1.0.0",
+  "description": "Heyyyyy",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc index.ts && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rm -rf *.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "typescript": "^4.9.4"
+  }
+}
