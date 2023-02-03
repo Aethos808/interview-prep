@@ -20,5 +20,15 @@ describe(twoSum, () => {
       expect(twoSum(array3, target3)).toEqual([0, 1]);
       expect(twoSum(array4, target4)).toEqual([2, 5]);
     })
+
+    it('for muscle memory',() => {
+      const arrays = [[2,7,11,15], [2,3,4], [3,3], [1, 2, 10, 18, 20, 21, 22, 28]];
+      const targets = [9, 6, 6, 31];
+      const solutions = [[0,1], [0,2], [0,1], [2,5]];
+
+      arrays.forEach((arr, index)=> {
+        expect(twoSum(arr, targets[index])).toEqual(solutions[index]);
+      })
+    })
   })
 })

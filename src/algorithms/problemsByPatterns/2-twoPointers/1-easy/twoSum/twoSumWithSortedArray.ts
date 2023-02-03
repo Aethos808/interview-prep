@@ -6,6 +6,30 @@
  * @param target
  */
 export const twoSum = (sortedArray: number[], target: number): number[] => {
+  let leftIndex = 0;
+  let rightIndex = sortedArray.length - 1;
+  let noSolution = true;
+
+  while(leftIndex < rightIndex){
+    const leftDifference = target - sortedArray[leftIndex];
+    const rightDifference  = target - sortedArray[rightIndex];
+
+    if(leftDifference === sortedArray[rightIndex] || rightDifference === sortedArray[leftIndex]){
+      return [leftIndex, rightIndex];
+    }
+    else if (leftDifference > sortedArray[rightIndex]){
+      leftIndex++;
+    }
+    else if (rightDifference < sortedArray[leftIndex]){
+      rightIndex--;
+    }
+  }
+
+  return [];
+}
+
+
+/*
   let neededIndices = [];
 
   //since the values in the case will be sorted we don't need to cache what values have been seen we can use 2 pointers
@@ -25,4 +49,4 @@ export const twoSum = (sortedArray: number[], target: number): number[] => {
   neededIndices.push(rightPointer);
 
   return neededIndices;
-}
+ */
