@@ -1,6 +1,13 @@
 #node
 **/*/node_modules
 **/*/*.js
+node_modules
 
 #webstorm
 .idea
+
+#terraform
+**/*/tfplan
+**/*/.terraform
+**/*/.terraform.lock.hcl
+**/*/*.tfstate
