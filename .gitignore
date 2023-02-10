@@ -10,4 +10,4 @@ node_modules
 **/*/tfplan
 **/*/.terraform
 **/*/.terraform.lock.hcl
-**/*/*.tfstate
+**/*/*.tfstate*
