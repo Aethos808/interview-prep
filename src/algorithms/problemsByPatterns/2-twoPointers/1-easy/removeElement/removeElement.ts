@@ -12,7 +12,65 @@
  * @param val
  */
 export const removeElement = (nums: number[], val: number): number => {
-  let endOfNewArray = 0;
+  // let leftIndex = 0;
+  // let rightIndex = nums.length-1;
+  //
+  // if (nums.length === 1){
+  //   return nums[0] === val ? 0 : 1;
+  // }
+  // while(leftIndex < rightIndex){
+  //   let leftVal = nums[leftIndex];
+  //   let rightVal = nums[rightIndex];
+  //
+  //   if (leftVal === val){
+  //     while (rightVal === val){
+  //       rightIndex--;
+  //       rightVal = nums[rightIndex];
+  //     }
+  //
+  //     nums[leftIndex] = rightVal;
+  //     nums[rightIndex] = leftVal;
+  //   }
+  //
+  //   leftIndex++;
+  // }
+  // return leftIndex;
+  let x = 0;
 
-  return endOfNewArray;
+  for(let i = 0 ; i < nums.length; i++){
+    if(nums[i] !== val) {
+      nums[x] = nums[i];
+      x++;
+    }
+  }
+
+  return x;
+
+    /**
+     *\
+     *
+     * l loops thru the array, pauses when you reach a bad number
+     * at this point you look at r
+     *  decrement what r is pointing at, until it points to a good number,
+     *  then swap the two
+     *  after swapping, continue looping thru the array with l
+     *      l     r
+     *     [2,2,3,3]
+     *
+     *
+     *
+     *
+     *       0,1,2,2,3,0,4,2
+     *                l r
+     *       [0,1,4,0,3,2,2,2];
+     *       val = 2
+     *       expected = [0,1,3,0,4....]
+      */
+  /**
+   *
+   * [0,1,2,0,2,2,4,2]
+   *
+   * [3,2,2,3]
+   *
+   */
 }

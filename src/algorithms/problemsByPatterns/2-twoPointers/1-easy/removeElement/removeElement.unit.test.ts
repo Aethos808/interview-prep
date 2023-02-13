@@ -13,11 +13,16 @@ describe(removeElement, () => {
       const val2 = 2;
       const expectedSize2 = 5;
 
+      console.log(nums1)
       expect(removeElement(nums1, val1)).toEqual(expectedSize1);
+      console.log(nums1)
+
       expect(nums1[0]).toEqual(numsNew1[0]);
       expect(nums1[1]).toEqual(numsNew1[1]);
 
+      console.log(nums2)
       expect(removeElement(nums2, val2)).toEqual(expectedSize2);
+      console.log(nums2)
       expect(nums2[0]).toEqual(numsNew2[0]);
       expect(nums2[1]).toEqual(numsNew2[1]);
       expect(nums2[2]).toEqual(numsNew2[2]);
