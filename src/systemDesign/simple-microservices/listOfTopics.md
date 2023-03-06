@@ -19,6 +19,9 @@
         - subnets
         - ☑ security groups
     - create terraform as a backup
+        - set up the AWS CLI in order to authenticate terraform with AWS
+            - create a user, user group, and policy in AWS IAM. Associate these three entities
+            - create a 
   - Deploy app into ECS
     - create repos in ecr
         - ☑ cost-service repo
@@ -43,6 +46,7 @@
     - use helm with kubernetes configuration
     - rewrite service to use AWS Lambda
     - set up health checking through AWS Route 53
+    - add a service mesh (kong)
     - set up separate hosted zones/subdomains for each microservice
         - you will likely need at least an NS record pointing to each subdomain (https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html#NSFormat)
     - add interaction with amazon s3, and KMS
