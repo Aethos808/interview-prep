@@ -7,7 +7,7 @@
  */
 
 import * as express from 'express';
-import { addition } from './addition';
+import { Addition } from './operations/Addition';
 
 const app = express();
 const port = 3000;
@@ -19,20 +19,29 @@ app.get('/', (req, res) => {
 })
 
 app.post('/calculation/', (req, res) => {
-    console.log('req: ', req.body);
-    let operation = req.body.op;
-    let num1 = req.body.num1;
-    let num2 = req.body.num2;
+    try {
+       const performCalculation=require(`./operations/${req.body.op}`);
+       const terms: string[] = req.body.terms.split('');
+       const intTerms = terms.map(term => parseInt(term));
 
-    if(operation === 'addition') {
-        res.send(
-            { 
-                response: addition(parseInt(num1), parseInt(num2)),
-                status: 200
-            });
-    } else {
-        res.error('what the fudge!'); 
+       performCalculation(terms);
     }
+    catch(error){
+        console.error(error);
+    }
+    // console.log('req: ', req.body);
+    // let operation = req.body.op;
+    // let num1 = req.body.num1;
+    // let num2 = req.body.num2;
+
+    //     res.send(
+    //         { 
+    //             response: addition(parseInt(num1), parseInt(num2)),
+    //             status: 200
+    //         });
+    // } else {
+    //     res.error('what the fudge!'); 
+    // }
 })
 
 app.listen(port, () => {
