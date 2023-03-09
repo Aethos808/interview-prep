@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-microservices
+  labels:
+    deployment: simple-microservices
+spec:
+  selector:
+    matchLabels:
+        deployment: simple-microservices
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        deployment: simple-microservices
+        octopusexport: OctopusExport
+    spec:
+      containers:
+        - name: tax
+          image: simple-microservices-tax
+          imagePullPolicy: Always
+          terminationMessagePolicy: FallbackToLogsOnError
+          ports:
+            - name: cost-svc-port
+              containerPort: 3000
+            - name: tax-svc-port
+              containerPort: 3001
