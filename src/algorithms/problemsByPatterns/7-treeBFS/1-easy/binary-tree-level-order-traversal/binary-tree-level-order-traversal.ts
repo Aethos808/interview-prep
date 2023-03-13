@@ -10,5 +10,6 @@ class TreeNode {
 }
 
 export const levelOrder = (root: TreeNode | null): number[][] => {
-    const x = new TreeNode(3, new TreeNode(9, new TreeNode(), new TreeNode()), new TreeNode(20, new TreeNode(15, new)));
+    const x = new TreeNode(3, new TreeNode(9, new TreeNode(), new TreeNode()), new TreeNode(20, new TreeNode(15, null)));
+    return [];
 }
